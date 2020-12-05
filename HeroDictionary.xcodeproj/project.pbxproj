@@ -13,6 +13,10 @@
 		6D670904257C0151005B7A4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D670903257C0151005B7A4F /* Preview Assets.xcassets */; };
 		6D67090F257C0151005B7A4F /* HeroDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67090E257C0151005B7A4F /* HeroDictionaryTests.swift */; };
 		6D67091A257C0152005B7A4F /* HeroDictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D670919257C0152005B7A4F /* HeroDictionaryUITests.swift */; };
+		6D670931257C029A005B7A4F /* MarvelApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67092D257C029A005B7A4F /* MarvelApi.swift */; };
+		6D670932257C029A005B7A4F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D67092E257C029A005B7A4F /* Configuration.swift */; };
+		6D670933257C029A005B7A4F /* Default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6D67092F257C029A005B7A4F /* Default.xcconfig */; };
+		6D670934257C029A005B7A4F /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D670930257C029A005B7A4F /* MD5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		6D670915257C0152005B7A4F /* HeroDictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroDictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D670919257C0152005B7A4F /* HeroDictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDictionaryUITests.swift; sourceTree = "<group>"; };
 		6D67091B257C0152005B7A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D67092D257C029A005B7A4F /* MarvelApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelApi.swift; sourceTree = "<group>"; };
+		6D67092E257C029A005B7A4F /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		6D67092F257C029A005B7A4F /* Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
+		6D670930257C029A005B7A4F /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,10 @@
 		6D6708FB257C0151005B7A4F /* HeroDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				6D67092E257C029A005B7A4F /* Configuration.swift */,
+				6D67092F257C029A005B7A4F /* Default.xcconfig */,
+				6D67092D257C029A005B7A4F /* MarvelApi.swift */,
+				6D670930257C029A005B7A4F /* MD5.swift */,
 				6D6708FC257C0151005B7A4F /* HeroDictionaryApp.swift */,
 				6D6708FE257C0151005B7A4F /* ContentView.swift */,
 				6D670900257C0151005B7A4F /* Assets.xcassets */,
@@ -235,6 +247,7 @@
 			files = (
 				6D670904257C0151005B7A4F /* Preview Assets.xcassets in Resources */,
 				6D670901257C0151005B7A4F /* Assets.xcassets in Resources */,
+				6D670933257C029A005B7A4F /* Default.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D670931257C029A005B7A4F /* MarvelApi.swift in Sources */,
+				6D670934257C029A005B7A4F /* MD5.swift in Sources */,
 				6D6708FF257C0151005B7A4F /* ContentView.swift in Sources */,
+				6D670932257C029A005B7A4F /* Configuration.swift in Sources */,
 				6D6708FD257C0151005B7A4F /* HeroDictionaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +314,7 @@
 /* Begin XCBuildConfiguration section */
 		6D67091C257C0152005B7A4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D67092F257C029A005B7A4F /* Default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -359,6 +376,7 @@
 		};
 		6D67091D257C0152005B7A4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D67092F257C029A005B7A4F /* Default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

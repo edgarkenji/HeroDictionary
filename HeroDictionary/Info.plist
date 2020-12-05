@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MARVEL_API_PRIVATE_KEY</key>
+	<string>${MARVEL_API_PRIVATE_KEY}</string>
+	<key>MARVEL_API_PUBLIC_KEY</key>
+	<string>${MARVEL_API_PUBLIC_KEY}</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

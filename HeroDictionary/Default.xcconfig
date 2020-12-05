@@ -1,0 +1,12 @@
+//
+//  Default.xcconfig
+//  HeroDictionary
+//
+//  Created by Edgar Kenji Yamamoto on 05/12/20.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+MARVEL_API_PRIVATE_KEY = YOUR_PRIVATE_KEY
+MARVEL_API_PUBLIC_KEY = YOUR_PUBLIC_KEY
