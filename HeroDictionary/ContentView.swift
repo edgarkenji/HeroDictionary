@@ -16,11 +16,10 @@ struct ContentView: View {
             .onAppear(perform: {
                 self.cancellable = URLSession
                     .shared
-                    .dataTaskPublisher(for: MarvelApi.characters.request).sink { (completion) in
+                    .decodedDataTaskPublisher(for: MarvelApi.characters.request).sink { (completion) in
                         
-                    } receiveValue: { (value) in
-                        let (data, response) = value
-                        print(String(data: data, encoding: .utf8))
+                    } receiveValue: { (data: CharacterDataWrapper) in
+                        print(data)
                     }
             })
             .onDisappear(perform: {
