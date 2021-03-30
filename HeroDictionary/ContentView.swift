@@ -9,21 +9,15 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    @State var cancellable: AnyCancellable?
+    @ObservedObject var repository = CharacterRepository()
+        
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        CharactersView(items: self.$repository.characters)
             .onAppear(perform: {
-                self.cancellable = URLSession
-                    .shared
-                    .decodedDataTaskPublisher(for: MarvelApi.characters.request).sink { (completion) in
-                        
-                    } receiveValue: { (data: CharacterDataWrapper) in
-                        print(data)
-                    }
+                repository.load()
             })
             .onDisappear(perform: {
-                cancellable?.cancel()
+                repository.cancel()
             })
     }
 }

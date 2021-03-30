@@ -53,6 +53,8 @@ public struct Character: Decodable {
     }
 }
 
+extension Character : Identifiable {}
+
 public extension Character {
     var smallThumbnailUrl: URL? {
         guard let path = thumbnail?.path, let imageExtension = thumbnail?.extension else { return nil }
